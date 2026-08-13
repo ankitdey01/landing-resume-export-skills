@@ -1,6 +1,6 @@
 # free-resume-export-site
 
-Landing page for the [free-resume-export](https://github.com/ankitdey01/free-resume-export) agent skill — a CLI-styled site that pitches stripping the resume-builder export paywall.
+Landing page for the [free-resume-export](https://github.com/ankitdey01/free-resume-export) agent skill, a CLI-styled site that pitches stripping the resume-builder export paywall.
 
 ![screenshot](public/screenshot.png)
 
@@ -9,16 +9,6 @@ Landing page for the [free-resume-export](https://github.com/ankitdey01/free-res
 - [Next.js](https://nextjs.org) (App Router, static output)
 - [Tailwind CSS](https://tailwindcss.com) v4 (CSS-first tokens, light/dark themes)
 - [Manrope](https://fonts.google.com/specimen/Manrope) + [DM Mono](https://fonts.google.com/specimen/DM+Mono), self-hosted via `next/font`
-
-## Structure
-
-```
-app/            layout + page (metadata, no-FOUC theme script)
-components/     Header, Hero, Features, HowItWorks, Install, Footer,
-                CopyButton, ThemeToggle, Terminal, Icons
-lib/            cn() helper
-public/         screenshot.png
-```
 
 ## Run
 
