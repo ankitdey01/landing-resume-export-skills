@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { DM_Mono, Manrope } from "next/font/google";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 import "./globals.css";
 
 const manrope = Manrope({
@@ -35,7 +36,10 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <head>
         <script dangerouslySetInnerHTML={{ __html: themeScript }} />
       </head>
-      <body className="bg-background text-foreground antialiased">{children}</body>
+      <body className="bg-background text-foreground antialiased">
+        {children}
+        <SpeedInsights />
+      </body>
     </html>
   );
 }
